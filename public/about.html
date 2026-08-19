@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About — Prediction Markets 101</title>
+    <meta
+      name="description"
+      content="About Prediction Markets 101 — a free educational guide built by the team behind Playmatez, a licensed prediction market platform."
+    />
+    <meta name="author" content="Prediction Markets 101" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://predictionmarkets101.academy/about" />
+    <meta property="og:title" content="About — Prediction Markets 101" />
+    <meta
+      property="og:description"
+      content="About Prediction Markets 101 — a free educational guide built by the team behind Playmatez, a licensed prediction market platform."
+    />
+    <meta property="og:image" content="https://predictionmarkets101.academy/articles/resolution-criteria.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About — Prediction Markets 101" />
+    <meta
+      name="twitter:description"
+      content="About Prediction Markets 101 — a free educational guide built by the team behind Playmatez, a licensed prediction market platform."
+    />
+    <meta name="twitter:image" content="https://predictionmarkets101.academy/articles/resolution-criteria.webp" />
+
+    <link rel="canonical" href="https://predictionmarkets101.academy/about" />
+
+    <script defer data-domain="predictionmarkets101.academy" src="https://plausible.io/js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              canvas: '#F4F1EB',
+              navy: { DEFAULT: '#12382D', light: '#1A4D3E', dark: '#0C2A20' },
+              charcoal: '#3E4651',
+              teal: { DEFAULT: '#B8915B', light: '#C9A575', dark: '#9A7A4A' },
+              terracotta: { DEFAULT: '#6A2431', light: '#8A3344' },
+              slateblue: { DEFAULT: '#3E4651', light: '#5C6675' },
+              red: { DEFAULT: '#6A2431', dark: '#4E1A24' },
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'Georgia', 'serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            boxShadow: {
+              card: '0 1px 3px 0 rgba(12, 42, 32, 0.06), 0 1px 2px 0 rgba(12, 42, 32, 0.04)',
+              'card-hover': '0 4px 12px -2px rgba(12, 42, 32, 0.08), 0 2px 6px -1px rgba(12, 42, 32, 0.05)',
+              'card-lg': '0 10px 30px -8px rgba(12, 42, 32, 0.12), 0 4px 12px -4px rgba(12, 42, 32, 0.06)',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      *:focus-visible { outline: 2px solid #B8915B; outline-offset: 2px; }
+    </style>
+  </head>
+  <body class="bg-canvas text-charcoal font-sans">
+    <div class="min-h-screen">
+      <!-- Header -->
+      <header class="px-6 pt-3 pb-3 sm:pt-4 sm:pb-4 bg-navy">
+        <div class="mx-auto max-w-5xl flex items-center justify-between">
+          <a href="/" class="inline-block">
+            <img
+              src="https://pub-85e8da6f6b3443da89cb72ca8b6938ec.r2.dev/academy-assets/ChatGPT%20Image%20Aug%2017%2C%202026%2C%2007_17_30%20PM.png"
+              alt="Prediction Markets 101"
+              class="h-16 sm:h-20 w-auto"
+            />
+          </a>
+          <nav class="hidden sm:flex items-center gap-6">
+            <a href="/about" class="text-sm text-white font-medium transition-colors underline decoration-white/40">About</a>
+            <a href="/articles" class="text-sm text-white/85 hover:text-white font-medium transition-colors">Articles</a>
+            <a href="/investors" class="text-sm text-white/85 hover:text-white font-medium transition-colors">Investors</a>
+            <a
+              href="/#get-the-guide"
+              class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-5 py-2.5 text-sm font-semibold text-white shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200"
+            >Get the Free Guide</a>
+          </nav>
+          <a
+            href="/"
+            class="sm:hidden text-sm text-white/85 hover:text-white underline decoration-white/40 hover:decoration-white transition-colors"
+          >
+            &larr; Back
+          </a>
+        </div>
+      </header>
+
+      <!-- About -->
+      <article class="px-6 pt-12 pb-20 sm:pt-16 sm:pb-28">
+        <div class="mx-auto max-w-3xl">
+          <!-- Title -->
+          <h1 class="font-serif text-3xl sm:text-4xl text-navy font-semibold leading-tight mb-4">
+            About Prediction Markets 101
+          </h1>
+          <div class="mb-10 h-px w-12 bg-teal/40"></div>
+
+          <!-- Why we built this -->
+          <section class="mb-14">
+            <h2 class="font-serif text-2xl text-navy mb-4">Why we built this</h2>
+            <div class="space-y-5 text-charcoal/85 leading-relaxed text-lg">
+              <p>
+                We built this guide because most content in this space is
+                either overhyped, sales driven, or buried in jargon. We
+                wanted a calm, honest starting point for people who are
+                simply curious — something that explains the mechanics
+                clearly without pushing you toward any particular
+                platform or action.
+              </p>
+              <p>
+                If you've ever read a prediction market explainer that
+                felt more like a pitch than an explanation, this is the
+                alternative. No hype, no pressure, just clear answers
+                to the questions a thoughtful person asks before they
+                risk anything.
+              </p>
+            </div>
+          </section>
+
+          <!-- About this guide -->
+          <section class="mb-14">
+            <h2 class="font-serif text-2xl text-navy mb-4">About this guide</h2>
+            <div class="space-y-5 text-charcoal/85 leading-relaxed text-lg">
+              <p>
+                We made this guide because most content in this space is
+                either overhyped, sales driven, or buried in jargon. We
+                wanted a calm, honest starting point for people who are
+                simply curious — something that explains the mechanics
+                clearly without pushing you toward any particular
+                platform or action.
+              </p>
+              <p>
+                The guide is completely free. There is no paid upsell, no
+                trial period, and no hidden tier. It exists to help people
+                understand this space clearly, not to charge them for it.
+              </p>
+              <p class="text-sm text-navy-light font-medium">
+                — The Playmatez team
+              </p>
+            </div>
+          </section>
+
+          <!-- About the operator -->
+          <section class="mb-14">
+            <h2 class="font-serif text-2xl text-navy mb-4">Who operates this site</h2>
+            <div class="space-y-5 text-charcoal/85 leading-relaxed text-lg">
+              <p>
+                This guide is built by the team behind Playmatez, a licensed
+                and regulated prediction market platform focused on social
+                and entertainment oriented markets. It is operated by a parent
+                company based at 167-169 Great Portland Street, London, W1W 5PF,
+                United Kingdom; the specific licensing authority and license
+                number will be listed here once final documentation is confirmed.
+                Markets resolve against previously agreed public sources stated per
+                market, so participants always know what determines the outcome
+                before they take a position.
+              </p>
+            </div>
+          </section>
+
+          <!-- For investors -->
+          <section class="mb-14">
+            <div class="rounded-xl border border-terracotta/20 bg-terracotta/[0.03] p-8 shadow-card">
+              <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-terracotta/10">
+                <svg class="h-6 w-6 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 13.5253 3.33579 13.875 3.75 13.875H6.75C7.16421 13.875 7.5 13.5253 7.5 13.125V10.875C7.5 10.4747 7.16421 10.125 6.75 10.125H3.75C3.33579 10.125 3 10.4747 3 10.875V13.125Z M13.5 13.125C13.5 13.5253 13.8358 13.875 14.25 13.875H17.25C17.6642 13.875 18 13.5253 18 13.125V4.875C18 4.47472 17.6642 4.125 17.25 4.125H14.25C13.8358 4.125 13.5 4.47472 13.5 4.875V13.125Z M8.25 13.125C8.25 13.5253 8.58579 13.875 9 13.875H12C12.4142 13.875 12.75 13.5253 12.75 13.125V7.875C12.75 7.47472 12.4142 7.125 12 7.125H9C8.58579 7.125 8.25 7.47472 8.25 7.875V13.125Z" /></svg>
+              </div>
+              <h2 class="font-serif text-2xl text-navy mb-3">For investors and partners</h2>
+              <p class="text-charcoal/80 leading-relaxed mb-4">
+                We're open to conversations with investors, potential
+                partners, and operators interested in white label or
+                jurisdiction-specific opportunities. Whether you're
+                evaluating the prediction market space, exploring a
+                partnership, or researching the regulatory landscape,
+                we're happy to share what we've learned.
+              </p>
+              <p class="text-charcoal/80 leading-relaxed mb-6">
+                Get in touch directly and we'll respond personally —
+                not through a form funnel.
+              </p>
+              <a
+                href="mailto:hello@predictionmarkets101.academy"
+                class="inline-flex items-center gap-2 rounded-lg border border-terracotta/40 bg-white px-6 py-3.5 text-sm font-semibold text-terracotta shadow-card hover:border-terracotta hover:bg-terracotta/5 active:scale-[0.98] transition-all duration-200"
+              >
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                Get in touch
+              </a>
+            </div>
+          </section>
+
+          <!-- Contact -->
+          <section class="mb-14">
+            <h2 class="font-serif text-2xl text-navy mb-4">Contact</h2>
+            <p class="text-charcoal/85 leading-relaxed text-lg">
+              For general questions about the guide, the articles, or
+              anything else on this site, reach us at{" "}
+              <a
+                href="mailto:hello@predictionmarkets101.academy"
+                class="text-navy-light hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors font-medium"
+              >hello@predictionmarkets101.academy</a>.
+            </p>
+          </section>
+
+          <!-- Disclaimer -->
+          <p class="text-xs text-charcoal/50 italic">
+            This content is for educational purposes only and does not
+            constitute investment advice.
+          </p>
+        </div>
+      </article>
+
+      <!-- Footer -->
+      <footer class="px-6 py-12 border-t border-navy/10">
+        <div class="mx-auto max-w-3xl text-center space-y-3 text-sm text-navy-light/70">
+          <p>
+            Brought to you by
+            <a
+              href="https://playmatez.cc"
+              class="text-navy-light hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors"
+              >Playmatez</a
+            >
+          </p>
+          <p>
+            <a
+              href="mailto:hello@predictionmarkets101.academy"
+              class="hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors"
+              >hello@predictionmarkets101.academy</a
+            >
+          </p>
+          <p class="text-xs">
+            Parent company address: 167-169 Great Portland Street, London, W1W
+            5PF, United Kingdom
+          </p>
+          <p>
+            <a
+              href="/privacy"
+              class="hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors"
+              >Privacy Policy</a
+            >
+          </p>
+          <p class="text-xs italic text-charcoal/50">
+            This content is for educational purposes only and does not
+            constitute investment advice.
+          </p>
+          <p class="text-xs">
+            &copy; 2026 Prediction Markets 101. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
