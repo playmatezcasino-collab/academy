@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://predictionmarkets101.academy/sitemap.xml

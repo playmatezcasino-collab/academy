@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>For Investors & Partners — Prediction Markets 101</title>
+    <meta
+      name="description"
+      content="For investors, partners, and operators interested in the business side of Playmatez — a licensed, London-based prediction market platform. Get in touch directly."
+    />
+    <meta name="author" content="Prediction Markets 101" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://predictionmarkets101.academy/investors" />
+    <meta property="og:title" content="For Investors & Partners — Prediction Markets 101" />
+    <meta
+      property="og:description"
+      content="For investors, partners, and operators interested in the business side of Playmatez — a licensed, London-based prediction market platform. Get in touch directly."
+    />
+    <meta property="og:image" content="https://predictionmarkets101.academy/articles/resolution-criteria.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="For Investors & Partners — Prediction Markets 101" />
+    <meta
+      name="twitter:description"
+      content="For investors, partners, and operators interested in the business side of Playmatez — a licensed, London-based prediction market platform. Get in touch directly."
+    />
+    <meta name="twitter:image" content="https://predictionmarkets101.academy/articles/resolution-criteria.webp" />
+
+    <link rel="canonical" href="https://predictionmarkets101.academy/investors" />
+
+    <script defer data-domain="predictionmarkets101.academy" src="https://plausible.io/js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              canvas: '#F4F1EB',
+              navy: { DEFAULT: '#12382D', light: '#1A4D3E', dark: '#0C2A20' },
+              charcoal: '#3E4651',
+              teal: { DEFAULT: '#B8915B', light: '#C9A575', dark: '#9A7A4A' },
+              terracotta: { DEFAULT: '#6A2431', light: '#8A3344' },
+              slateblue: { DEFAULT: '#3E4651', light: '#5C6675' },
+              red: { DEFAULT: '#6A2431', dark: '#4E1A24' },
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'Georgia', 'serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            boxShadow: {
+              card: '0 1px 3px 0 rgba(12, 42, 32, 0.06), 0 1px 2px 0 rgba(12, 42, 32, 0.04)',
+              'card-hover': '0 4px 12px -2px rgba(12, 42, 32, 0.08), 0 2px 6px -1px rgba(12, 42, 32, 0.05)',
+              'card-lg': '0 10px 30px -8px rgba(12, 42, 32, 0.12), 0 4px 12px -4px rgba(12, 42, 32, 0.06)',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      *:focus-visible { outline: 2px solid #B8915B; outline-offset: 2px; }
+
+      /* ─── Section background textures (matching homepage) ─── */
+      .section-bg-slateblue {
+        background-color: rgba(62, 70, 81, 0.06);
+        background-image:
+          radial-gradient(ellipse 80% 70% at 50% 30%, rgba(62, 70, 81, 0.14), transparent 75%);
+      }
+      .section-bg-navy {
+        background-color: rgba(18, 56, 45, 0.04);
+        background-image:
+          radial-gradient(ellipse 80% 70% at 50% 30%, rgba(18, 56, 45, 0.10), transparent 75%);
+      }
+      .section-bg-teal {
+        background-color: rgba(184, 145, 91, 0.06);
+        background-image:
+          radial-gradient(ellipse 80% 70% at 50% 30%, rgba(184, 145, 91, 0.14), transparent 75%);
+      }
+      .section-bg-terracotta {
+        background-color: rgba(106, 36, 49, 0.05);
+        background-image:
+          radial-gradient(ellipse 80% 70% at 50% 30%, rgba(106, 36, 49, 0.13), transparent 75%);
+      }
+
+      /* ─── Mobile-only background image (investors page intro) ─── */
+      .investors-mobile-bg {
+        position: absolute;
+        inset: 0;
+        background-image: url('https://pub-85e8da6f6b3443da89cb72ca8b6938ec.r2.dev/academy-assets/MOBILEWEBBACKGROUND.webp');
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        pointer-events: none;
+        opacity: 0.85;
+      }
+      @media (min-width: 1024px) {
+        .investors-mobile-bg { display: none; }
+      }
+    </style>
+  </head>
+  <body class="bg-canvas text-charcoal font-sans">
+    <div class="min-h-screen">
+      <!-- Header -->
+      <header class="px-6 pt-3 pb-3 sm:pt-4 sm:pb-4 bg-navy">
+        <div class="mx-auto max-w-5xl flex items-center justify-between">
+          <a href="/" class="inline-block">
+            <img
+              src="https://pub-85e8da6f6b3443da89cb72ca8b6938ec.r2.dev/academy-assets/ChatGPT%20Image%20Aug%2017%2C%202026%2C%2007_17_30%20PM.png"
+              alt="Prediction Markets 101"
+              class="h-16 sm:h-20 w-auto"
+            />
+          </a>
+          <nav class="hidden sm:flex items-center gap-6">
+            <a href="/about" class="text-sm text-white/85 hover:text-white font-medium transition-colors">About</a>
+            <a href="/articles" class="text-sm text-white/85 hover:text-white font-medium transition-colors">Articles</a>
+            <a href="/investors" class="text-sm text-white font-medium transition-colors underline decoration-white/40">Investors</a>
+            <a
+              href="/#get-the-guide"
+              class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-5 py-2.5 text-sm font-semibold text-white shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200"
+            >Get the Free Guide</a>
+          </nav>
+          <a
+            href="/"
+            class="sm:hidden text-sm text-white/85 hover:text-white underline decoration-white/40 hover:decoration-white transition-colors"
+          >
+            &larr; Back
+          </a>
+        </div>
+      </header>
+
+      <!-- ─── INTRO / HERO ─── -->
+      <section class="relative overflow-hidden px-6 pt-16 pb-24 sm:pt-24 sm:pb-32">
+        <!-- Mobile-only background image -->
+        <div class="investors-mobile-bg lg:hidden"></div>
+        <div class="relative mx-auto max-w-3xl">
+          <div class="mb-8 inline-flex items-center gap-2 rounded-full bg-navy/5 px-4 py-1.5 text-xs font-medium text-navy-light uppercase tracking-[0.15em]">
+            <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z" /><path stroke-linecap="round" stroke-linejoin="round" d="M3 7l7.89 5.26a2 2 0 002.22 0L21 7" /></svg>
+            <span>For Investors &amp; Partners</span>
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-navy font-semibold leading-[1.05] mb-6">
+            Interested in the business side of prediction markets?
+          </h1>
+          <p class="text-lg sm:text-xl text-charcoal/75 leading-relaxed max-w-2xl">
+            Playmatez is a licensed, London-based prediction market platform.
+            This page is for investors, partners, and operators who want a
+            direct conversation about the space and our roadmap.
+          </p>
+        </div>
+      </section>
+
+      <!-- ─── PLATFORM TRACTION (stat callout grid) ─── -->
+      <section class="relative overflow-hidden px-6 py-20 sm:py-28">
+        <div class="section-bg-slateblue absolute inset-0 pointer-events-none"></div>
+        <div class="relative mx-auto max-w-3xl">
+          <div class="mb-14">
+            <h2 class="font-serif text-2xl sm:text-3xl text-navy text-center">Platform traction</h2>
+            <div class="mx-auto mt-4 h-px w-12 bg-teal/40"></div>
+          </div>
+
+          <!-- Stat callout cards (matching homepage pattern) -->
+          <div class="grid gap-4 sm:grid-cols-3 mb-10">
+            <div class="rounded-xl border border-navy/10 bg-white p-6 text-center shadow-card">
+              <div class="font-serif text-3xl text-navy font-semibold">1,200+</div>
+              <div class="mt-2 text-xs text-navy-light leading-snug">Markets resolved to date</div>
+            </div>
+            <div class="rounded-xl border border-navy/10 bg-white p-6 text-center shadow-card">
+              <div class="font-serif text-3xl text-navy font-semibold">Live</div>
+              <div class="mt-2 text-xs text-navy-light leading-snug">Resolving markets today</div>
+            </div>
+            <div class="rounded-xl border border-navy/10 bg-white p-6 text-center shadow-card">
+              <div class="font-serif text-3xl text-navy font-semibold">Aug 2026</div>
+              <div class="mt-2 text-xs text-navy-light leading-snug">Latest data update</div>
+            </div>
+          </div>
+
+          <p class="text-charcoal/85 leading-relaxed text-lg">
+            The platform is live and resolving markets today. We're happy
+            to share more detail on volume, category mix, and user growth
+            in a direct conversation.
+          </p>
+        </div>
+      </section>
+
+      <!-- ─── BIG INVESTORS AND INTEREST ─── -->
+      <section class="relative overflow-hidden px-6 py-20 sm:py-28">
+        <div class="section-bg-teal absolute inset-0 pointer-events-none"></div>
+        <div class="relative mx-auto max-w-3xl">
+          <div class="mb-14">
+            <h2 class="font-serif text-2xl sm:text-3xl text-navy text-center">Big investors and interest</h2>
+            <div class="mx-auto mt-4 h-px w-12 bg-teal/40"></div>
+          </div>
+
+          <!-- Stat callout cards (sourced figures) -->
+          <div class="grid gap-4 sm:grid-cols-2 mb-10">
+            <div class="rounded-xl border border-navy/10 bg-white p-6 text-center shadow-card">
+              <div class="font-serif text-3xl text-navy font-semibold">$2B</div>
+              <div class="mt-2 text-xs text-navy-light leading-snug">Intercontinental Exchange (NYSE parent) investment in Polymarket</div>
+            </div>
+            <div class="rounded-xl border border-navy/10 bg-white p-6 text-center shadow-card">
+              <div class="font-serif text-3xl text-navy font-semibold">$8B</div>
+              <div class="mt-2 text-xs text-navy-light leading-snug">Resulting Polymarket valuation</div>
+            </div>
+          </div>
+
+          <div class="space-y-5 text-charcoal/80 leading-relaxed text-lg">
+            <p>
+              In October 2025, the New York Stock Exchange's parent company,
+              Intercontinental Exchange, announced a strategic investment of
+              up to $2 billion in Polymarket, valuing the platform at $8
+              billion. Total industry trading volume exceeded $63 billion
+              across 2025 alone.
+            </p>
+            <p>
+              Additional venture capital and strategic investment has flowed
+              into the prediction market space from firms including Founders
+              Fund. These are factual signals of investor interest in the
+              category, not an endorsement of Playmatez or a prediction of
+              our own future value.
+            </p>
+          </div>
+
+          <p class="mt-8 text-xs text-charcoal/50 italic">
+            This content is for informational purposes only and does not
+            constitute an offer to sell or a solicitation of an offer to
+            buy any securities.
+          </p>
+        </div>
+      </section>
+
+      <!-- ─── INDUSTRY PROJECTION (prominent banner) ─── -->
+      <section class="px-6 py-20 bg-navy">
+        <div class="mx-auto max-w-3xl text-center">
+          <div class="font-serif text-5xl sm:text-6xl text-white font-semibold leading-none mb-6">
+            $1T
+          </div>
+          <p class="font-serif text-2xl sm:text-3xl text-white leading-snug mb-4">
+            projected industry volume by 2030
+          </p>
+          <p class="text-sm text-white/60 max-w-xl mx-auto">
+            Some analysts project the space could reach $1 trillion in volume
+            by 2030 — a projection, not a certainty.
+          </p>
+          <p class="mt-6 text-xs text-white/40 italic">
+            This content is for informational purposes only and does not
+            constitute investment advice.
+          </p>
+        </div>
+      </section>
+
+      <!-- ─── CONVERSATIONS WE'RE OPEN TO ─── -->
+      <section class="relative overflow-hidden px-6 py-20 sm:py-28">
+        <div class="section-bg-terracotta absolute inset-0 pointer-events-none"></div>
+        <div class="relative mx-auto max-w-3xl">
+          <div class="mb-14">
+            <h2 class="font-serif text-2xl sm:text-3xl text-navy text-center">Conversations we're open to</h2>
+            <div class="mx-auto mt-4 h-px w-12 bg-teal/40"></div>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-semibold text-navy mb-1">Partnerships</h3>
+              <p class="text-charcoal/80 leading-relaxed">
+                Content, distribution, and data partnerships that help
+                more people understand and engage with prediction
+                markets.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-navy mb-1">Investment</h3>
+              <p class="text-charcoal/80 leading-relaxed">
+                Conversations with investors evaluating the prediction
+                market space. We're happy to share what we've learned
+                about the market, the regulatory landscape, and our
+                roadmap.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-navy mb-1">White label &amp; operators</h3>
+              <p class="text-charcoal/80 leading-relaxed">
+                Operators interested in white label deployments or
+                jurisdiction-specific market offerings built on
+                Playmatez infrastructure.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-navy mb-1">Media &amp; research</h3>
+              <p class="text-charcoal/80 leading-relaxed">
+                Press inquiries, academic research collaborations, and
+                data requests. We can connect you with the right person
+                on our team.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── ABOUT THE OPERATOR ─── -->
+      <section class="relative overflow-hidden px-6 py-20 sm:py-28">
+        <div class="section-bg-navy absolute inset-0 pointer-events-none"></div>
+        <div class="relative mx-auto max-w-3xl">
+          <div class="mb-14">
+            <h2 class="font-serif text-2xl sm:text-3xl text-navy text-center">Who operates this site</h2>
+            <div class="mx-auto mt-4 h-px w-12 bg-teal/40"></div>
+          </div>
+          <div class="space-y-5 text-charcoal/85 leading-relaxed text-lg">
+            <p>
+              This site is built by the team behind Playmatez, a licensed
+              and regulated prediction market platform focused on social and
+              entertainment oriented markets. Markets are short form, often
+              running from minutes to days, and are designed to be approachable
+              for a broad consumer audience rather than only for experienced
+              traders. The platform is operated by a parent company based at
+              167-169 Great Portland Street, London, W1W 5PF, United Kingdom;
+              the specific licensing authority and license number will be
+              listed here once final documentation is confirmed. Markets
+              resolve against previously agreed public sources stated per market,
+              so participants always know what determines the outcome before
+              they take a position.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── CONTACT CTA ─── -->
+      <section class="relative overflow-hidden px-6 py-20 sm:py-28">
+        <div class="section-bg-navy absolute inset-0 pointer-events-none"></div>
+        <div class="relative mx-auto max-w-3xl">
+          <div class="rounded-xl border border-terracotta/20 bg-white p-8 shadow-card">
+            <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-terracotta/10">
+              <svg class="h-6 w-6 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+            </div>
+            <h2 class="font-serif text-2xl text-navy mb-3">Get in touch</h2>
+            <p class="text-charcoal/80 leading-relaxed mb-4">
+              Reach out directly and we'll respond personally — not
+              through a form funnel. Whether you're evaluating an
+              investment, exploring a partnership, or researching the
+              space, we'll make sure you talk to the right person.
+            </p>
+            <a
+              href="mailto:hello@predictionmarkets101.academy"
+              class="inline-flex items-center gap-2 rounded-lg border border-terracotta/40 bg-white px-6 py-3.5 text-sm font-semibold text-terracotta shadow-card hover:border-terracotta hover:bg-terracotta/5 active:scale-[0.98] transition-all duration-200 w-full sm:w-auto break-all sm:break-normal"
+            >
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+              hello@predictionmarkets101.academy
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Disclaimer -->
+      <p class="px-6 pb-12 text-xs text-charcoal/50 italic max-w-3xl mx-auto">
+        This content is for informational purposes only and does not
+        constitute an offer to sell or a solicitation of an offer to
+        buy any securities.
+      </p>
+
+      <!-- Footer -->
+      <footer class="px-6 py-12 border-t border-navy/10">
+        <div class="mx-auto max-w-3xl text-center space-y-3 text-sm text-navy-light/70">
+          <p>
+            Brought to you by
+            <a
+              href="https://playmatez.cc"
+              class="text-navy-light hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors"
+              >Playmatez</a
+            >
+          </p>
+          <p>
+            <a
+              href="mailto:hello@predictionmarkets101.academy"
+              class="hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors"
+              >hello@predictionmarkets101.academy</a
+            >
+          </p>
+          <p class="text-xs">
+            Parent company address: 167-169 Great Portland Street, London, W1W
+            5PF, United Kingdom
+          </p>
+          <p>
+            <a
+              href="/privacy"
+              class="hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors"
+              >Privacy Policy</a
+            >
+          </p>
+          <p class="text-xs italic text-charcoal/50">
+            This content is for educational purposes only and does not
+            constitute investment advice.
+          </p>
+          <p class="text-xs">
+            &copy; 2026 Prediction Markets 101. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

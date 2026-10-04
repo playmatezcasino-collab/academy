@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Categories — Prediction Markets 101</title>
+    <meta
+      name="description"
+      content="The market categories available on Playmatez — crypto, stocks, weather, streaming, finance, sports, politics, pop culture, global, and esports. Learn how each category works and explore live markets."
+    />
+    <meta name="author" content="Prediction Markets 101" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://predictionmarkets101.academy/categories" />
+    <meta property="og:title" content="Categories — Prediction Markets 101" />
+    <meta
+      property="og:description"
+      content="The market categories available on Playmatez — crypto, stocks, weather, streaming, finance, sports, politics, pop culture, global, and esports. Learn how each category works and explore live markets."
+    />
+    <meta property="og:image" content="https://predictionmarkets101.academy/articles/resolution-criteria.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Categories — Prediction Markets 101" />
+    <meta
+      name="twitter:description"
+      content="The market categories available on Playmatez — crypto, stocks, weather, streaming, finance, sports, politics, pop culture, global, and esports. Learn how each category works and explore live markets."
+    />
+    <meta name="twitter:image" content="https://predictionmarkets101.academy/articles/resolution-criteria.webp" />
+
+    <link rel="canonical" href="https://predictionmarkets101.academy/categories" />
+
+    <script defer data-domain="predictionmarkets101.academy" src="https://plausible.io/js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              canvas: '#F4F1EB',
+              navy: { DEFAULT: '#12382D', light: '#1A4D3E', dark: '#0C2A20' },
+              charcoal: '#3E4651',
+              teal: { DEFAULT: '#B8915B', light: '#C9A575', dark: '#9A7A4A' },
+              terracotta: { DEFAULT: '#6A2431', light: '#8A3344' },
+              slateblue: { DEFAULT: '#3E4651', light: '#5C6675' },
+              red: { DEFAULT: '#6A2431', dark: '#4E1A24' },
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'Georgia', 'serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            boxShadow: {
+              card: '0 1px 3px 0 rgba(12, 42, 32, 0.06), 0 1px 2px 0 rgba(12, 42, 32, 0.04)',
+              'card-hover': '0 4px 12px -2px rgba(12, 42, 32, 0.08), 0 2px 6px -1px rgba(12, 42, 32, 0.05)',
+              'card-lg': '0 10px 30px -8px rgba(12, 42, 32, 0.12), 0 4px 12px -4px rgba(12, 42, 32, 0.06)',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      *:focus-visible { outline: 2px solid #B8915B; outline-offset: 2px; }
+
+      /* ─── Section background textures (matching homepage) ─── */
+      .section-bg-slateblue {
+        background-color: rgba(62, 70, 81, 0.06);
+        background-image:
+          radial-gradient(ellipse 80% 70% at 50% 30%, rgba(62, 70, 81, 0.14), transparent 75%);
+      }
+      .section-bg-navy {
+        background-color: rgba(18, 56, 45, 0.04);
+        background-image:
+          radial-gradient(ellipse 80% 70% at 50% 30%, rgba(18, 56, 45, 0.10), transparent 75%);
+      }
+      .section-bg-teal {
+        background-color: rgba(184, 145, 91, 0.06);
+        background-image:
+          radial-gradient(ellipse 80% 70% at 50% 30%, rgba(184, 145, 91, 0.14), transparent 75%);
+      }
+      .section-bg-terracotta {
+        background-color: rgba(106, 36, 49, 0.05);
+        background-image:
+          radial-gradient(ellipse 80% 70% at 50% 30%, rgba(106, 36, 49, 0.13), transparent 75%);
+      }
+
+      /* ─── Smooth scroll offset for anchor jumps ─── */
+      section[id] { scroll-margin-top: 80px; }
+    </style>
+  </head>
+  <body class="bg-canvas text-charcoal font-sans">
+    <div class="min-h-screen">
+      <!-- ─── HEADER ─── -->
+      <header class="px-6 pt-3 pb-3 sm:pt-4 sm:pb-4 bg-navy">
+        <div class="mx-auto max-w-5xl flex items-center justify-between">
+          <a href="/" class="inline-block">
+            <img
+              src="https://pub-85e8da6f6b3443da89cb72ca8b6938ec.r2.dev/academy-assets/ChatGPT%20Image%20Aug%2017%2C%202026%2C%2007_17_30%20PM.png"
+              alt="Prediction Markets 101"
+              class="h-16 sm:h-20 w-auto"
+            />
+          </a>
+          <nav class="hidden sm:flex items-center gap-6">
+            <a href="/about" class="text-sm text-white/85 hover:text-white font-medium transition-colors">About</a>
+            <a href="/articles" class="text-sm text-white/85 hover:text-white font-medium transition-colors">Articles</a>
+            <a href="/investors" class="text-sm text-white/85 hover:text-white font-medium transition-colors">Investors</a>
+            <a
+              href="/#get-the-guide"
+              class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-5 py-2.5 text-sm font-semibold text-white shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200"
+            >Get the Free Guide</a>
+          </nav>
+          <a
+            href="/"
+            class="sm:hidden text-sm text-white/85 hover:text-white underline decoration-white/40 hover:decoration-white transition-colors"
+          >
+            &larr; Back
+          </a>
+        </div>
+      </header>
+
+      <!-- ─── HERO / INTRO ─── -->
+      <section class="relative overflow-hidden px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
+        <div class="relative mx-auto max-w-3xl text-center">
+          <div class="mb-8 inline-flex items-center gap-2 rounded-full bg-navy/5 px-4 py-1.5 text-xs font-medium text-navy-light uppercase tracking-[0.15em]">
+            <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            <span>Market Categories</span>
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl text-navy font-semibold leading-[1.05] mb-6">
+            Markets for every interest
+          </h1>
+          <div class="mx-auto mb-6 h-px w-12 bg-teal/40"></div>
+          <p class="text-lg sm:text-xl text-charcoal/75 leading-relaxed max-w-2xl mx-auto">
+            Prediction markets span far more than politics. Playmatez offers
+            markets across ten categories — from crypto and stocks to weather,
+            sports, and esports. Each one names its resolution source before it
+            opens, so you always know what determines the outcome.
+          </p>
+        </div>
+      </section>
+
+      <!-- ─── HOW CATEGORIES WORK (educational bridge) ─── -->
+      <section class="relative overflow-hidden px-6 py-20 sm:py-24">
+        <div class="section-bg-teal absolute inset-0 pointer-events-none"></div>
+        <div class="relative mx-auto max-w-3xl">
+          <div class="mb-12 text-center">
+            <h2 class="font-serif text-2xl sm:text-3xl text-navy">How categories work</h2>
+            <div class="mx-auto mt-4 h-px w-12 bg-teal/40"></div>
+          </div>
+          <div class="grid gap-5 sm:grid-cols-3">
+            <div class="rounded-xl border border-navy/10 bg-white p-6 shadow-card">
+              <div class="mb-3 inline-flex items-center justify-center h-10 w-10 rounded-full bg-teal/10">
+                <svg class="h-5 w-5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 class="font-serif text-lg text-navy mb-2">Resolution source is named first</h3>
+              <p class="text-sm text-charcoal/70 leading-relaxed">
+                Every market states the public source that will determine its
+                outcome — an official result, a published index, a named data
+                feed — before anyone takes a position.
+              </p>
+            </div>
+            <div class="rounded-xl border border-navy/10 bg-white p-6 shadow-card">
+              <div class="mb-3 inline-flex items-center justify-center h-10 w-10 rounded-full bg-navy/10">
+                <svg class="h-5 w-5 text-navy-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 class="font-serif text-lg text-navy mb-2">Markets close before the event</h3>
+              <p class="text-sm text-charcoal/70 leading-relaxed">
+                Trading locks before the event starts, so the crowd's
+                expectation is captured in advance — not changed mid-event.
+                The final price reflects what participants collectively believed.
+              </p>
+            </div>
+            <div class="rounded-xl border border-navy/10 bg-white p-6 shadow-card">
+              <div class="mb-3 inline-flex items-center justify-center h-10 w-10 rounded-full bg-terracotta/10">
+                <svg class="h-5 w-5 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9m6-9l3-1m-3 1l3 9a5.002 5.002 0 006.001 0M18 7l3 9m-9-4h.01M15 12h.01M21 12h.01M12 12h.01" /></svg>
+              </div>
+              <h3 class="font-serif text-lg text-navy mb-2">Price is probability, not certainty</h3>
+              <p class="text-sm text-charcoal/70 leading-relaxed">
+                A 70 cent share implies a 70% chance — which means there's still a
+                30% chance it doesn't happen. Understanding that distinction is
+                the single most important habit for newcomers.
+              </p>
+            </div>
+          </div>
+          <p class="mt-8 text-center text-sm text-navy-light/70">
+            Want the deeper explanation?{" "}
+            <a href="/#get-the-guide" class="text-navy-light hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors font-medium">
+              Get the free guide
+            </a>{" "}
+            or{" "}
+            <a href="/articles" class="text-navy-light hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors font-medium">
+              read our articles
+            </a>{" "}
+            on resolution criteria, fees, and common mistakes.
+          </p>
+        </div>
+      </section>
+
+      <!-- ─── CATEGORY SECTIONS ─── -->
+      <section class="px-6 py-20 sm:py-28">
+        <div class="mx-auto max-w-4xl">
+          <div class="mb-14 text-center">
+            <h2 class="font-serif text-2xl sm:text-3xl text-navy">Explore each category</h2>
+            <div class="mx-auto mt-4 h-px w-12 bg-teal/40"></div>
+            <p class="mt-6 text-lg text-charcoal/70 leading-relaxed max-w-2xl mx-auto">
+              Ten categories, each with its own resolution approach. Click
+              through to see live markets on Playmatez.
+            </p>
+          </div>
+
+          <div class="space-y-10">
+
+            <!-- ─── 1. CRYPTO ─── -->
+            <div id="crypto" class="rounded-2xl border border-navy/10 bg-white p-8 shadow-card overflow-hidden relative">
+              <div class="flex flex-col sm:flex-row gap-6">
+                <div class="sm:w-48 shrink-0">
+                  <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-teal/10">
+                    <svg class="h-6 w-6 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                  </div>
+                  <h3 class="font-serif text-2xl text-navy">Crypto</h3>
+                </div>
+                <div class="flex-1">
+                  <p class="text-charcoal/80 leading-relaxed mb-5">
+                    Bitcoin price milestones, token launch events, and on-chain
+                    milestones. Markets in this category track whether a major
+                    cryptocurrency will hit a specific price or market cap by a
+                    stated deadline.
+                  </p>
+                  <div class="mb-5">
+                    <p class="text-xs font-semibold text-navy-light uppercase tracking-[0.12em] mb-2">What you can predict</p>
+                    <ul class="space-y-1.5 text-sm text-charcoal/75">
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will Bitcoin hit $100K by December 31?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a new stablecoin launch this quarter?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will Ethereum's market cap exceed $500B by year-end?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named token be listed on a top-5 exchange this month?</li>
+                    </ul>
+                  </div>
+                  <div class="mb-6 rounded-lg bg-navy/[0.03] px-4 py-3">
+                    <p class="text-xs text-charcoal/60">
+                      <span class="font-semibold text-navy-light">Resolves against:</span>
+                      Publicly reported prices from named exchanges and on-chain data at the stated deadline.
+                    </p>
+                  </div>
+                  <a
+                    href="https://picks.playmatez.cc/arena?category=crypto"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-6 py-3 text-sm font-semibold text-white shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200"
+                  >
+                    Explore Crypto markets
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ─── 2. STOCKS ─── -->
+            <div id="stocks" class="rounded-2xl border border-navy/10 bg-white p-8 shadow-card overflow-hidden relative">
+              <div class="flex flex-col sm:flex-row gap-6">
+                <div class="sm:w-48 shrink-0">
+                  <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-teal/10">
+                    <svg class="h-6 w-6 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 17l6-6 4 4 8-8M14 7h7v7" /></svg>
+                  </div>
+                  <h3 class="font-serif text-2xl text-navy">Stocks</h3>
+                </div>
+                <div class="flex-1">
+                  <p class="text-charcoal/80 leading-relaxed mb-5">
+                    Equity price milestones, earnings outcomes, and index level
+                    targets. Markets in this category resolve against publicly
+                    reported stock prices and exchange-published figures.
+                  </p>
+                  <div class="mb-5">
+                    <p class="text-xs font-semibold text-navy-light uppercase tracking-[0.12em] mb-2">What you can predict</p>
+                    <ul class="space-y-1.5 text-sm text-charcoal/75">
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will Tesla close above $300 on Friday?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will the S&amp;P 500 end the week above 6,000?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will Apple's next earnings beat analyst estimates?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named IPO price above its target range?</li>
+                    </ul>
+                  </div>
+                  <div class="mb-6 rounded-lg bg-navy/[0.03] px-4 py-3">
+                    <p class="text-xs text-charcoal/60">
+                      <span class="font-semibold text-navy-light">Resolves against:</span>
+                      Exchange-published closing prices and official earnings reports at the stated date.
+                    </p>
+                  </div>
+                  <a
+                    href="https://picks.playmatez.cc/arena?category=stocks"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-6 py-3 text-sm font-semibold text-white shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200"
+                  >
+                    Explore Stocks markets
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ─── 3. WEATHER ─── -->
+            <div id="weather" class="rounded-2xl border border-navy/10 bg-white p-8 shadow-card overflow-hidden relative">
+              <div class="flex flex-col sm:flex-row gap-6">
+                <div class="sm:w-48 shrink-0">
+                  <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-slateblue/10">
+                    <svg class="h-6 w-6 text-slateblue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15h13a4 4 0 100-8 5 5 0 00-9.9 1A3.5 3.5 0 003 15z M8 18h.01M12 18h.01M16 18h.01" /></svg>
+                  </div>
+                  <h3 class="font-serif text-2xl text-navy">Weather</h3>
+                </div>
+                <div class="flex-1">
+                  <p class="text-charcoal/80 leading-relaxed mb-5">
+                    Temperature records, rainfall totals, and storm-track
+                    milestones for cities around the world. Markets resolve
+                    against named meteorological services like the Met Office or
+                    NOAA, so the source is agreed before you take a position.
+                  </p>
+                  <div class="mb-5">
+                    <p class="text-xs font-semibold text-navy-light uppercase tracking-[0.12em] mb-2">What you can predict</p>
+                    <ul class="space-y-1.5 text-sm text-charcoal/75">
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will London's high exceed 30&deg;C this week?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will New York get more than 2 inches of rain this month?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named hurricane make landfall in Florida this season?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will Tokyo see a record-low temperature this winter?</li>
+                    </ul>
+                  </div>
+                  <div class="mb-6 rounded-lg bg-navy/[0.03] px-4 py-3">
+                    <p class="text-xs text-charcoal/60">
+                      <span class="font-semibold text-navy-light">Resolves against:</span>
+                      Named meteorological services (Met Office, NOAA, JMA) published data at the stated time.
+                    </p>
+                  </div>
+                  <a
+                    href="https://picks.playmatez.cc/arena?category=weather"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-6 py-3 text-sm font-semibold text-white shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200"
+                  >
+                    Explore Weather markets
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ─── 4. STREAMING ─── -->
+            <div id="streaming" class="rounded-2xl border border-navy/10 bg-white p-8 shadow-card overflow-hidden relative">
+              <div class="flex flex-col sm:flex-row gap-6">
+                <div class="sm:w-48 shrink-0">
+                  <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-teal/10">
+                    <svg class="h-6 w-6 text-teal-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+                  </div>
+                  <h3 class="font-serif text-2xl text-navy">Streaming</h3>
+                </div>
+                <div class="flex-1">
+                  <p class="text-charcoal/80 leading-relaxed mb-5">
+                    Live, in-the-moment markets tied to streaming events as they
+                    unfold. Markets here resolve against the broadcast or platform
+                    feed named in the market description.
+                  </p>
+                  <div class="mb-5">
+                    <p class="text-xs font-semibold text-navy-light uppercase tracking-[0.12em] mb-2">What you can predict</p>
+                    <ul class="space-y-1.5 text-sm text-charcoal/75">
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named streamer hit 100K concurrent viewers tonight?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a live broadcast's peak audience exceed 5 million?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named show be renewed before its season finale airs?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a live event's stream reach a stated viewership milestone?</li>
+                    </ul>
+                  </div>
+                  <div class="mb-6 rounded-lg bg-navy/[0.03] px-4 py-3">
+                    <p class="text-xs text-charcoal/60">
+                      <span class="font-semibold text-navy-light">Resolves against:</span>
+                      The broadcast or platform feed named in the market description, at the stated time.
+                    </p>
+                  </div>
+                  <a
+                    href="https://picks.playmatez.cc/arena?category=streaming"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-6 py-3 text-sm font-semibold text-white shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200"
+                  >
+                    Explore Streaming markets
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ─── 5. FINANCE ─── -->
+            <div id="finance" class="rounded-2xl border border-navy/10 bg-white p-8 shadow-card overflow-hidden relative">
+              <div class="flex flex-col sm:flex-row gap-6">
+                <div class="sm:w-48 shrink-0">
+                  <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-navy/10">
+                    <svg class="h-6 w-6 text-navy-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 13.5253 3.33579 13.875 3.75 13.875H6.75C7.16421 13.875 7.5 13.5253 7.5 13.125V10.875C7.5 10.4747 7.16421 10.125 6.75 10.125H3.75C3.33579 10.125 3 10.4747 3 10.875V13.125Z M8.25 13.125C8.25 13.5253 8.58579 13.875 9 13.875H12C12.4142 13.875 12.75 13.5253 12.75 13.125V7.875C12.75 7.47472 12.4142 7.125 12 7.125H9C8.58579 7.125 8.25 7.47472 8.25 7.875V13.125ZM13.5 13.125C13.5 13.5253 13.8358 13.875 14.25 13.875H17.25C17.6642 13.875 18 13.5253 18 13.125V4.875C18 4.47472 17.6642 4.125 17.25 4.125H14.25C13.8358 4.125 13.5 4.47472 13.5 4.875V13.125Z" /></svg>
+                  </div>
+                  <h3 class="font-serif text-2xl text-navy">Finance</h3>
+                </div>
+                <div class="flex-1">
+                  <p class="text-charcoal/80 leading-relaxed mb-5">
+                    Economic indicators, central bank decisions, and corporate
+                    earnings outcomes. Markets here resolve against publicly
+                    reported figures like inflation prints, interest rate moves,
+                    and quarterly results.
+                  </p>
+                  <div class="mb-5">
+                    <p class="text-xs font-semibold text-navy-light uppercase tracking-[0.12em] mb-2">What you can predict</p>
+                    <ul class="space-y-1.5 text-sm text-charcoal/75">
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will the Fed cut rates at the next FOMC meeting?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will UK inflation come in below 3% this quarter?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named company's earnings beat consensus estimates?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will GDP growth exceed 2% annualized this quarter?</li>
+                    </ul>
+                  </div>
+                  <div class="mb-6 rounded-lg bg-navy/[0.03] px-4 py-3">
+                    <p class="text-xs text-charcoal/60">
+                      <span class="font-semibold text-navy-light">Resolves against:</span>
+                      Official public data sources — central bank announcements, statistical office releases, and published earnings reports.
+                    </p>
+                  </div>
+                  <a
+                    href="https://picks.playmatez.cc/arena?category=finance"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-6 py-3 text-sm font-semibold text-white shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200"
+                  >
+                    Explore Finance markets
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ─── 6. SPORTS ─── -->
+            <div id="sports" class="rounded-2xl border border-navy/10 bg-white p-8 shadow-card overflow-hidden relative">
+              <div class="flex flex-col sm:flex-row gap-6">
+                <div class="sm:w-48 shrink-0">
+                  <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-terracotta/10">
+                    <svg class="h-6 w-6 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm12-3c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z" /></svg>
+                  </div>
+                  <h3 class="font-serif text-2xl text-navy">Sports</h3>
+                </div>
+                <div class="flex-1">
+                  <p class="text-charcoal/80 leading-relaxed mb-5">
+                    Match results, player performance milestones, and
+                    season-long props across major leagues. Markets close before
+                    the event starts and resolve against the official result
+                    reported by the league or competition.
+                  </p>
+                  <div class="mb-5">
+                    <p class="text-xs font-semibold text-navy-light uppercase tracking-[0.12em] mb-2">What you can predict</p>
+                    <ul class="space-y-1.5 text-sm text-charcoal/75">
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will Manchester City win the Premier League this season?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named player score over 30 goals this season?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will the Lakers make the playoffs this year?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named tennis player win the next Grand Slam?</li>
+                    </ul>
+                  </div>
+                  <div class="mb-6 rounded-lg bg-navy/[0.03] px-4 py-3">
+                    <p class="text-xs text-charcoal/60">
+                      <span class="font-semibold text-navy-light">Resolves against:</span>
+                      Official results reported by the league or competition organizer at the stated event's conclusion.
+                    </p>
+                  </div>
+                  <a
+                    href="https://picks.playmatez.cc/arena?category=sports"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-6 py-3 text-sm font-semibold text-white shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200"
+                  >
+                    Explore Sports markets
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ─── 7. POLITICS ─── -->
+            <div id="politics" class="rounded-2xl border border-navy/10 bg-white p-8 shadow-card overflow-hidden relative">
+              <div class="flex flex-col sm:flex-row gap-6">
+                <div class="sm:w-48 shrink-0">
+                  <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-terracotta/10">
+                    <svg class="h-6 w-6 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5a1 1 0 01.8.4l2.7 3.6a1 1 0 00.8.4H19a2 2 0 012 2v8M3 17h18M9 6h6m-9 8h2m4 0h2" /></svg>
+                  </div>
+                  <h3 class="font-serif text-2xl text-navy">Politics</h3>
+                </div>
+                <div class="flex-1">
+                  <p class="text-charcoal/80 leading-relaxed mb-5">
+                    Election outcomes, legislative deadlines, and policy
+                    decisions across major democracies. Every market names its
+                    resolution source — typically an official result or a named
+                    public record — before it opens.
+                  </p>
+                  <div class="mb-5">
+                    <p class="text-xs font-semibold text-navy-light uppercase tracking-[0.12em] mb-2">What you can predict</p>
+                    <ul class="space-y-1.5 text-sm text-charcoal/75">
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named candidate win the next mayoral election?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a specific bill pass before the legislative deadline?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named policy be announced by quarter-end?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a referendum pass with over 50% of the vote?</li>
+                    </ul>
+                  </div>
+                  <div class="mb-6 rounded-lg bg-navy/[0.03] px-4 py-3">
+                    <p class="text-xs text-charcoal/60">
+                      <span class="font-semibold text-navy-light">Resolves against:</span>
+                      Official election results or named public records published by the stated authority.
+                    </p>
+                  </div>
+                  <a
+                    href="https://picks.playmatez.cc/arena?category=politics"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-6 py-3 text-sm font-semibold text-white shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200"
+                  >
+                    Explore Politics markets
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ─── 8. POP CULTURE ─── -->
+            <div id="pop-culture" class="rounded-2xl border border-navy/10 bg-white p-8 shadow-card overflow-hidden relative">
+              <div class="flex flex-col sm:flex-row gap-6">
+                <div class="sm:w-48 shrink-0">
+                  <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-navy/10">
+                    <svg class="h-6 w-6 text-navy-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3zm12-3c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z" /></svg>
+                  </div>
+                  <h3 class="font-serif text-2xl text-navy">Pop Culture</h3>
+                </div>
+                <div class="flex-1">
+                  <p class="text-charcoal/80 leading-relaxed mb-5">
+                    Entertainment awards, chart positions, and culture-defining
+                    moments. Markets in this category cover everything from box
+                    office milestones to reality show outcomes, each resolving
+                    against a named public announcement or published list.
+                  </p>
+                  <div class="mb-5">
+                    <p class="text-xs font-semibold text-navy-light uppercase tracking-[0.12em] mb-2">What you can predict</p>
+                    <ul class="space-y-1.5 text-sm text-charcoal/75">
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named film win Best Picture at the next awards?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named album debut at #1 on the official chart?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named movie gross over $500M worldwide?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named reality show contestant win the season?</li>
+                    </ul>
+                  </div>
+                  <div class="mb-6 rounded-lg bg-navy/[0.03] px-4 py-3">
+                    <p class="text-xs text-charcoal/60">
+                      <span class="font-semibold text-navy-light">Resolves against:</span>
+                      Named public announcements, published award results, or official chart data at the stated date.
+                    </p>
+                  </div>
+                  <a
+                    href="https://picks.playmatez.cc/arena?category=pop-culture"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-6 py-3 text-sm font-semibold text-white shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200"
+                  >
+                    Explore Pop Culture markets
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ─── 9. GLOBAL ─── -->
+            <div id="global" class="rounded-2xl border border-navy/10 bg-white p-8 shadow-card overflow-hidden relative">
+              <div class="flex flex-col sm:flex-row gap-6">
+                <div class="sm:w-48 shrink-0">
+                  <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-slateblue/10">
+                    <svg class="h-6 w-6 text-slateblue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18zm0 0c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m-9 9h18" /></svg>
+                  </div>
+                  <h3 class="font-serif text-2xl text-navy">Global</h3>
+                </div>
+                <div class="flex-1">
+                  <p class="text-charcoal/80 leading-relaxed mb-5">
+                    Geopolitical events, international summits, and breaking
+                    global developments. These markets cover outcomes that
+                    cross borders, from treaty announcements to humanitarian
+                    milestones, each tied to a specific named source.
+                  </p>
+                  <div class="mb-5">
+                    <p class="text-xs font-semibold text-navy-light uppercase tracking-[0.12em] mb-2">What you can predict</p>
+                    <ul class="space-y-1.5 text-sm text-charcoal/75">
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named peace treaty be signed before the deadline?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a G20 summit produce a joint statement this year?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named country join a specific international agreement?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a humanitarian milestone be reached by the stated date?</li>
+                    </ul>
+                  </div>
+                  <div class="mb-6 rounded-lg bg-navy/[0.03] px-4 py-3">
+                    <p class="text-xs text-charcoal/60">
+                      <span class="font-semibold text-navy-light">Resolves against:</span>
+                      Named public sources — official announcements, published communiqués, or verified international records.
+                    </p>
+                  </div>
+                  <a
+                    href="https://picks.playmatez.cc/arena?category=global"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-6 py-3 text-sm font-semibold text-white shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200"
+                  >
+                    Explore Global markets
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ─── 10. ESPORTS ─── -->
+            <div id="esports" class="rounded-2xl border border-navy/10 bg-white p-8 shadow-card overflow-hidden relative">
+              <div class="flex flex-col sm:flex-row gap-6">
+                <div class="sm:w-48 shrink-0">
+                  <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-slateblue/10">
+                    <svg class="h-6 w-6 text-slateblue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12h4M8 10v4M15 13v.01M18 11v.01M17.32 5.57L17.32 5.57A2 2 0 0015.5 4.5h-7A2 2 0 006.68 5.57L4.2 11.15A2 2 0 004 12v4a2 2 0 002 2h12a2 2 0 002-2v-4a2 2 0 00-.2-.85l-2.48-5.58z" /></svg>
+                  </div>
+                  <h3 class="font-serif text-2xl text-navy">Esports</h3>
+                </div>
+                <div class="flex-1">
+                  <p class="text-charcoal/80 leading-relaxed mb-5">
+                    Tournament results, match outcomes, and player performance
+                    across competitive gaming. Markets resolve against the
+                    official result reported by the tournament organizer or league.
+                  </p>
+                  <div class="mb-5">
+                    <p class="text-xs font-semibold text-navy-light uppercase tracking-[0.12em] mb-2">What you can predict</p>
+                    <ul class="space-y-1.5 text-sm text-charcoal/75">
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named team win the next major tournament?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a named player achieve a tournament MVP award?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a match go to a deciding fifth game?</li>
+                      <li class="flex items-start gap-2"><span class="text-teal mt-0.5">&bull;</span> Will a team's tournament run end before the semifinals?</li>
+                    </ul>
+                  </div>
+                  <div class="mb-6 rounded-lg bg-navy/[0.03] px-4 py-3">
+                    <p class="text-xs text-charcoal/60">
+                      <span class="font-semibold text-navy-light">Resolves against:</span>
+                      Official results reported by the tournament organizer or league at the match's conclusion.
+                    </p>
+                  </div>
+                  <a
+                    href="https://picks.playmatez.cc/arena?category=esports"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-6 py-3 text-sm font-semibold text-white shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200"
+                  >
+                    Explore Esports markets
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── BOTTOM CTA ─── -->
+      <section class="relative overflow-hidden px-6 py-24">
+        <div class="section-bg-navy absolute inset-0 pointer-events-none"></div>
+        <div class="relative mx-auto max-w-3xl">
+          <div class="grid gap-6 sm:grid-cols-2">
+            <!-- Ready to explore -->
+            <div class="rounded-xl border border-navy/10 bg-white p-8 shadow-card text-center">
+              <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-teal/10">
+                <svg class="h-6 w-6 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+              </div>
+              <h3 class="font-serif text-xl text-navy mb-2">Ready to explore?</h3>
+              <p class="text-sm text-charcoal/70 leading-relaxed mb-5">
+                Jump straight into all live markets on Playmatez.
+              </p>
+              <a
+                href="https://picks.playmatez.cc/arena"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-6 py-3 text-sm font-semibold text-white shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200"
+              >
+                See all live markets
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+              </a>
+            </div>
+            <!-- New to prediction markets -->
+            <div class="rounded-xl border border-navy/10 bg-white p-8 shadow-card text-center">
+              <div class="mb-4 inline-flex items-center justify-center h-12 w-12 rounded-full bg-navy/10">
+                <svg class="h-6 w-6 text-navy-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+              </div>
+              <h3 class="font-serif text-xl text-navy mb-2">New to prediction markets?</h3>
+              <p class="text-sm text-charcoal/70 leading-relaxed mb-5">
+                Start with the free guide — four short lessons, about ten minutes.
+              </p>
+              <a
+                href="/#get-the-guide"
+                class="inline-flex items-center justify-center gap-2 rounded-lg border border-navy/30 bg-white px-6 py-3 text-sm font-semibold text-navy shadow-card hover:border-navy/50 hover:bg-navy/5 active:scale-[0.98] transition-all duration-200"
+              >
+                Get the free guide
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── FOOTER ─── -->
+      <footer class="px-6 py-12 border-t border-navy/10">
+        <div class="mx-auto max-w-3xl text-center space-y-3 text-sm text-navy-light/70">
+          <p>
+            Brought to you by
+            <a
+              href="https://playmatez.cc"
+              class="text-navy-light hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors"
+              >Playmatez</a
+            >
+          </p>
+          <p>
+            <a
+              href="mailto:hello@predictionmarkets101.academy"
+              class="hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors"
+              >hello@predictionmarkets101.academy</a
+            >
+          </p>
+          <p class="text-xs">
+            Parent company address: 167-169 Great Portland Street, London, W1W
+            5PF, United Kingdom
+          </p>
+          <p>
+            <a
+              href="/privacy"
+              class="hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors"
+              >Privacy Policy</a
+          </p>
+          <p class="text-xs italic text-charcoal/50">
+            This content is for educational purposes only and does not
+            constitute investment advice.
+          </p>
+          <p class="text-xs">
+            &copy; 2026 Prediction Markets 101. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
