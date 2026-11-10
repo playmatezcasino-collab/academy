@@ -1,0 +1,3 @@
+[functions.send-guide]
+verify_jwt = true
+entrypoint = "./functions/send-guide/index.ts"

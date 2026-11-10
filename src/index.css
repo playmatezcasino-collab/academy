@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Hero background: Cambridge-style architectural line illustration ─── */
+.hero-illustration {
+  background-image: url('/hero-illustration.webp');
+  background-position: calc(100% + 8rem) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 38%, rgba(0,0,0,0.08) 50%, rgba(0,0,0,0.55) 68%, #000 84%);
+  mask-image: linear-gradient(to right, transparent 0%, transparent 38%, rgba(0,0,0,0.08) 50%, rgba(0,0,0,0.55) 68%, #000 84%);
+}
+
+@media (max-width: 1023px) {
+  .hero-illustration { display: none; }
+}
+
+/* ─── Hero background: mobile-only architectural illustration ─── */
+.hero-mobile-bg {
+  background-image: url('https://pub-85e8da6f6b3443da89cb72ca8b6938ec.r2.dev/academy-assets/MOBILEWEBBACKGROUND.webp');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.85;
+}
+@media (min-width: 1024px) {
+  .hero-mobile-bg { display: none; }
+}
+
+/* ─── Section background textures (visible color wash, still editorial) ─── */
+.section-bg-teal {
+  background-color: rgba(184, 145, 91, 0.06);
+  background-image:
+    radial-gradient(ellipse 80% 70% at 50% 30%, rgba(184, 145, 91, 0.14), transparent 75%);
+}
+
+.section-bg-terracotta {
+  background-color: rgba(106, 36, 49, 0.05);
+  background-image:
+    radial-gradient(ellipse 80% 70% at 50% 30%, rgba(106, 36, 49, 0.13), transparent 75%);
+}
+
+.section-bg-slateblue {
+  background-color: rgba(62, 70, 81, 0.06);
+  background-image:
+    radial-gradient(ellipse 80% 70% at 50% 30%, rgba(62, 70, 81, 0.14), transparent 75%);
+}
+
+.section-bg-navy {
+  background-color: rgba(18, 56, 45, 0.04);
+  background-image:
+    radial-gradient(ellipse 80% 70% at 50% 30%, rgba(18, 56, 45, 0.10), transparent 75%);
+}
+
+/* ─── Guide cover: layered accent gradients + diagonal texture ─── */
+.guide-cover-texture {
+  background-color: #12382D;
+  background-image:
+    repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 24px,
+      rgba(255, 255, 255, 0.03) 24px,
+      rgba(255, 255, 255, 0.03) 25px
+    ),
+    radial-gradient(ellipse 50% 40% at 15% 20%, rgba(106, 36, 49, 0.14), transparent 70%),
+    radial-gradient(ellipse 55% 45% at 85% 85%, rgba(184, 145, 91, 0.16), transparent 70%),
+    radial-gradient(ellipse 45% 35% at 90% 15%, rgba(62, 70, 81, 0.12), transparent 70%),
+    linear-gradient(180deg, #1A4D3E 0%, #12382D 55%, #0C2A20 100%);
+}
+
+/* ─── Probability bar: looping 50/50 → 65/35 shift ─── */
+@keyframes prob-yes {
+  0%, 100% { width: 50%; }
+  40%, 60% { width: 65%; }
+}
+@keyframes prob-no {
+  0%, 100% { width: 50%; }
+  40%, 60% { width: 35%; }
+}
+@keyframes prob-label-start {
+  0%, 12%, 88%, 100% { opacity: 1; }
+  40%, 60% { opacity: 0; }
+}
+@keyframes prob-label-end {
+  0%, 12%, 88%, 100% { opacity: 0; }
+  40%, 60% { opacity: 1; }
+}
+
+.prob-bar-yes { animation: prob-yes 6s ease-in-out infinite; }
+.prob-bar-no { animation: prob-no 6s ease-in-out infinite; }
+.prob-label-start { animation: prob-label-start 6s ease-in-out infinite; }
+.prob-label-end { animation: prob-label-end 6s ease-in-out infinite; }
+
+@keyframes prob-handle {
+  0%, 100% { left: 50%; }
+  40%, 60% { left: 65%; }
+}
+
+.prob-handle { animation: prob-handle 6s ease-in-out infinite; }
+
+/* ─── Gentle float on guide cover icon ─── */
+@keyframes guide-icon-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.guide-icon-float {
+  animation: guide-icon-float 4s ease-in-out infinite;
+}
+
+/* ─── Price/Probability converter slider ─── */
+.converter-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #B8915B, #6A2431);
+  outline: none;
+  cursor: pointer;
+}
+.converter-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 2px solid #12382D;
+  box-shadow: 0 2px 6px rgba(12, 42, 32, 0.2);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.converter-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.12);
+}
+.converter-slider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 2px solid #12382D;
+  box-shadow: 0 2px 6px rgba(12, 42, 32, 0.2);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.converter-slider::-moz-range-thumb:hover {
+  transform: scale(1.12);
+}
+
+/* ─── Primary CTA button: slow, low-intensity breathing glow ─── */
+@keyframes button-pulse {
+  0%, 100% {
+    box-shadow: 0 10px 30px -8px rgba(12, 42, 32, 0.12), 0 4px 12px -4px rgba(12, 42, 32, 0.06),
+                0 0 0 0 rgba(184, 145, 91, 0);
+  }
+  50% {
+    box-shadow: 0 10px 30px -8px rgba(12, 42, 32, 0.12), 0 4px 12px -4px rgba(12, 42, 32, 0.06),
+                0 0 18px 2px rgba(184, 145, 91, 0.15);
+  }
+}
+
+.animate-button-pulse {
+  animation: button-pulse 3.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-button-pulse { animation: none; }
+  .prob-bar-yes, .prob-bar-no, .prob-label-start, .prob-label-end, .prob-handle { animation: none; }
+  .prob-bar-yes { width: 50%; }
+  .prob-bar-no { width: 50%; }
+  .prob-handle { left: 50%; }
+  .transition-all { transition: none !important; }
+}
+
+/* ─── Smooth scroll for in-page anchors ─── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ─── Refined focus ring ─── */
+*:focus-visible {
+  outline: 2px solid #B8915B;
+  outline-offset: 2px;
+}

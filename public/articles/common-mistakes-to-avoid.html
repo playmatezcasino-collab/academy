@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Common Mistakes to Avoid — Prediction Markets 101</title>
+    <meta
+      name="description"
+      content="Most losses in prediction markets don't come from bad luck. They come from a handful of repeatable mistakes — here are five worth writing down before you start."
+    />
+    <meta name="author" content="Prediction Markets 101" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://predictionmarkets101.academy/articles/common-mistakes-to-avoid.html" />
+    <meta property="og:title" content="Common Mistakes to Avoid — Prediction Markets 101" />
+    <meta
+      property="og:description"
+      content="Most losses in prediction markets don't come from bad luck. They come from a handful of repeatable mistakes — here are five worth writing down before you start."
+    />
+    <meta property="og:image" content="https://predictionmarkets101.academy/articles/common-mistakes-to-avoid.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Common Mistakes to Avoid — Prediction Markets 101" />
+    <meta
+      name="twitter:description"
+      content="Most losses in prediction markets don't come from bad luck. They come from a handful of repeatable mistakes — here are five worth writing down before you start."
+    />
+    <meta name="twitter:image" content="https://predictionmarkets101.academy/articles/common-mistakes-to-avoid.webp" />
+
+    <link rel="canonical" href="https://predictionmarkets101.academy/articles/common-mistakes-to-avoid.html" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Common Mistakes to Avoid",
+      "image": "https://predictionmarkets101.academy/articles/common-mistakes-to-avoid.webp",
+      "url": "https://predictionmarkets101.academy/articles/common-mistakes-to-avoid.html",
+      "author": {
+        "@type": "Organization",
+        "name": "The Playmatez team"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Prediction Markets 101",
+        "url": "https://predictionmarkets101.academy/"
+      },
+      "datePublished": "2026-08-17",
+      "description": "Most losses in prediction markets don't come from bad luck. They come from a handful of repeatable mistakes — here are five worth writing down before you start."
+    }
+    </script>
+
+    <script defer data-domain="predictionmarkets101.academy" src="https://plausible.io/js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              canvas: '#F4F1EB',
+              navy: { DEFAULT: '#12382D', light: '#1A4D3E', dark: '#0C2A20' },
+              charcoal: '#3E4651',
+              teal: { DEFAULT: '#B8915B', light: '#C9A575', dark: '#9A7A4A' },
+              terracotta: { DEFAULT: '#6A2431', light: '#8A3344' },
+              slateblue: { DEFAULT: '#3E4651', light: '#5C6675' },
+              red: { DEFAULT: '#6A2431', dark: '#4E1A24' },
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'Georgia', 'serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            boxShadow: {
+              card: '0 1px 3px 0 rgba(12, 42, 32, 0.06), 0 1px 2px 0 rgba(12, 42, 32, 0.04)',
+              'card-hover': '0 4px 12px -2px rgba(12, 42, 32, 0.08), 0 2px 6px -1px rgba(12, 42, 32, 0.05)',
+              'card-lg': '0 10px 30px -8px rgba(12, 42, 32, 0.12), 0 4px 12px -4px rgba(12, 42, 32, 0.06)',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      *:focus-visible { outline: 2px solid #B8915B; outline-offset: 2px; }
+    </style>
+  </head>
+  <body class="bg-canvas text-charcoal font-sans">
+    <div class="min-h-screen">
+      <!-- Header -->
+      <header class="px-6 pt-3 pb-3 sm:pt-4 sm:pb-4 bg-navy">
+        <div class="mx-auto max-w-5xl flex items-center justify-between">
+          <a href="/" class="inline-block">
+            <img
+              src="https://pub-85e8da6f6b3443da89cb72ca8b6938ec.r2.dev/academy-assets/ChatGPT%20Image%20Aug%2017%2C%202026%2C%2007_17_30%20PM.png"
+              alt="Prediction Markets 101"
+              class="h-16 sm:h-20 w-auto"
+            />
+          </a>
+          <a
+            href="/articles"
+            class="text-sm text-white/85 hover:text-white underline decoration-white/40 hover:decoration-white transition-colors"
+          >
+            &larr; Back to Articles
+          </a>
+        </div>
+      </header>
+
+      <!-- Article -->
+      <article class="px-6 pt-12 pb-20 sm:pt-16 sm:pb-28">
+        <div class="mx-auto max-w-3xl">
+          <!-- Header image -->
+          <div class="aspect-[1200/630] overflow-hidden rounded-xl shadow-card-lg mb-10">
+            <img
+              src="/articles/common-mistakes-to-avoid.webp"
+              alt="Common Mistakes to Avoid"
+              class="w-full h-full object-cover"
+              decoding="async"
+            />
+          </div>
+
+          <!-- Title + byline -->
+          <h1 class="font-serif text-3xl sm:text-4xl text-navy font-semibold leading-tight mb-4">
+            Common Mistakes to Avoid
+          </h1>
+          <p class="text-sm text-navy-light mb-10">
+            2 min read &middot; August 2026
+          </p>
+
+          <!-- Body -->
+          <div class="space-y-6 text-charcoal/85 leading-relaxed text-lg">
+            <p>Most losses in prediction markets don't come from bad luck. They come from a handful of repeatable mistakes.</p>
+            <p>Confusing a market price with certainty. A market pricing something at 90% isn't saying it's guaranteed, it's saying the crowd currently believes it's roughly nine times more likely than not. Ten percent chances happen all the time.</p>
+            <p>Not checking the resolution source before betting, only after. By the time a dispute happens, it's too late to have wanted better information.</p>
+            <p>Sizing a position like it can't go wrong. The single fastest way to turn a bad week into a genuinely damaging one is committing an amount that actually hurts if you're wrong, rather than an amount you'd be fine losing entirely.</p>
+            <p>Chasing a loss immediately after taking one. The urge to "win it back" right away is one of the most well documented patterns in how people make worse decisions under emotional pressure, not just in prediction markets, in any activity involving risk.</p>
+            <p>Only ever betting on categories you don't actually understand. The people who do best tend to start in a category they already follow closely, sports they watch, an industry they work in, not the flashiest headline market of the week.</p>
+            <p>None of these are complicated. They're just easy to forget in the moment, which is exactly why they're worth writing down.</p>
+          </div>
+
+          <!-- Byline -->
+          <p class="mt-10 text-sm text-navy-light font-medium">
+            &mdash; The Playmatez team
+          </p>
+
+          <!-- Related reading -->
+          <div class="mt-16 pt-8 border-t border-navy/10">
+            <h2 class="font-serif text-xl text-navy mb-6">Related reading</h2>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <a
+                href="/articles/understanding-resolution-criteria.html"
+                class="group rounded-xl border border-navy/10 bg-white p-5 shadow-card hover:shadow-card-hover hover:border-navy/20 transition-all duration-300"
+              >
+                <h3 class="font-medium text-navy mb-1 group-hover:text-navy-dark transition-colors">
+                  Understanding Resolution Criteria
+                </h3>
+                <p class="text-sm text-charcoal/65 leading-relaxed">
+                  How clearly a market defines its resolution source before you place a position is one of the most overlooked things newcomers skip past.
+                </p>
+              </a>
+              <a
+                href="/articles/fees-spreads-hidden-costs.html"
+                class="group rounded-xl border border-navy/10 bg-white p-5 shadow-card hover:shadow-card-hover hover:border-navy/20 transition-all duration-300"
+              >
+                <h3 class="font-medium text-navy mb-1 group-hover:text-navy-dark transition-colors">
+                  Fees, Spreads, and Hidden Costs
+                </h3>
+                <p class="text-sm text-charcoal/65 leading-relaxed">
+                  Every prediction market platform takes a cut somewhere. What matters is whether it tells you plainly where the fee lives.
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <!-- Email capture -->
+          <div class="mt-16 text-center">
+            <div class="inline-flex items-center justify-center h-14 w-14 rounded-full bg-teal/10 mb-6">
+              <svg class="h-7 w-7 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h2 class="font-serif text-3xl text-navy mb-4">
+              Get the free guide
+            </h2>
+            <p class="text-charcoal/75 mb-8 leading-relaxed max-w-xl mx-auto">
+              Enter your email and we'll send the guide straight to your inbox.
+              More lessons and guides are planned, so there's more to come.
+            </p>
+            <form id="article-signup" class="w-full max-w-lg mx-auto" novalidate>
+              <div class="flex flex-col md:flex-row gap-3">
+                <div class="relative flex-1">
+                  <svg class="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-navy-light/50" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    aria-label="First name"
+                    class="w-full pl-11 pr-4 py-3 text-base rounded-lg border border-navy/20 bg-white text-charcoal placeholder:text-navy-light/40 focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors"
+                  />
+                </div>
+                <div class="relative flex-1">
+                  <svg class="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-navy-light/50" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    aria-label="Email address"
+                    class="w-full pl-11 pr-4 py-3 text-base rounded-lg border border-navy/20 bg-white text-charcoal placeholder:text-navy-light/40 focus:outline-none focus:border-teal focus:ring-1 focus:ring-teal transition-colors"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  class="inline-flex items-center justify-center gap-2 rounded-lg bg-teal px-8 py-4 text-lg font-bold text-white shadow-card-lg hover:bg-teal-dark hover:shadow-card-lg hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-200"
+                >
+                  Send Me The Free Guide
+                </button>
+              </div>
+              <p class="mt-3 text-sm text-navy-light/70">
+                By submitting, you agree to receive the guide and occasional related emails.
+              </p>
+              <p id="form-message" class="mt-2 text-sm text-teal hidden"></p>
+            </form>
+          </div>
+        </div>
+      </article>
+
+      <!-- Footer -->
+      <footer class="px-6 py-12 border-t border-navy/10">
+        <div class="mx-auto max-w-3xl text-center space-y-3 text-sm text-navy-light/70">
+          <p>
+            Brought to you by
+            <a
+              href="https://playmatez.cc"
+              class="text-navy-light hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors"
+              >Playmatez</a
+            >
+          </p>
+          <p>
+            <a
+              href="mailto:hello@predictionmarkets101.academy"
+              class="hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors"
+              >hello@predictionmarkets101.academy</a
+            >
+          </p>
+          <p class="text-xs">
+            Parent company address: 167-169 Great Portland Street, London, W1W
+            5PF, United Kingdom
+          </p>
+          <p>
+            <a
+              href="/privacy"
+              class="hover:text-navy underline decoration-navy-light/30 hover:decoration-navy-light transition-colors"
+              >Privacy Policy</a
+            >
+          </p>
+          <p class="text-xs italic text-charcoal/50">
+            This content is for educational purposes only and does not
+            constitute investment advice.
+          </p>
+          <p class="text-xs">
+            &copy; 2026 Prediction Markets 101. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const SUPABASE_URL = 'https://lrpqntprpgwxsplauqzk.supabase.co';
+      const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxycHFudHBycGd3eHNwbGF1cXprIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODUyNjAxNDIsImV4cCI6MjEwMDgzNjE0Mn0.fVqu2RobmyduA1VOEqt4zcYlM5jxU_shKADMLDz81lQ';
+      const GUIDE_PDF_URL = 'https://pub-85e8da6f6b3443da89cb72ca8b6938ec.r2.dev/Guides/Prediction_Markets_101_Course.pdf';
+
+      const form = document.getElementById('article-signup');
+      const msg = document.getElementById('form-message');
+      const btn = form.querySelector('button[type="submit"]');
+      const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+
+        msg.classList.add('hidden');
+        if (!email || !EMAIL_RE.test(email)) {
+          msg.textContent = 'Please enter a valid email address.';
+          msg.classList.remove('hidden');
+          return;
+        }
+
+        btn.disabled = true;
+        btn.textContent = 'Sending\u2026';
+
+        try {
+          await fetch(`${SUPABASE_URL}/rest/v1/subscribers`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              apikey: SUPABASE_ANON_KEY,
+              Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+            },
+            body: JSON.stringify({ email, name: name || null, phone: null }),
+          });
+
+          await fetch(`${SUPABASE_URL}/functions/v1/send-guide`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+            },
+            body: JSON.stringify({ email, name: name || null, phone: null, timestamp: new Date().toISOString() }),
+          });
+
+          form.innerHTML = `
+            <div class="w-full max-w-lg mx-auto">
+              <div class="flex items-center gap-2 text-lg font-medium text-teal-dark justify-center">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                <span>You're in. The guide is on its way.</span>
+              </div>
+              <a href="${GUIDE_PDF_URL}" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 px-6 py-3 text-base rounded-lg bg-teal text-white font-medium shadow-card hover:bg-teal-dark hover:shadow-card-hover active:scale-[0.98] transition-all duration-200">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+                Download the Guide
+              </a>
+            </div>
+          `;
+        } catch (err) {
+          msg.textContent = 'Something went wrong. Please try again.';
+          msg.classList.remove('hidden');
+          btn.disabled = false;
+          btn.textContent = 'Send Me The Free Guide';
+        }
+      });
+    </script>
+  </body>
+</html>
